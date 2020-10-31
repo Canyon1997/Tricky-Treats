@@ -7,7 +7,7 @@ public class LittleCandy : UniversalItemData
     private Rigidbody2D littleCandy_RB;
 
     [Header("Item Point Amount")]
-    private int littleCandy_Points = 10;
+    [SerializeField] private int littleCandy_Points = 10;
 
 
 
