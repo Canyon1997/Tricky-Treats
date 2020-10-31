@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 146351127459488209}
   - component: {fileID: 2869969196447340834}
   - component: {fileID: -9086517350272430245}
+  - component: {fileID: -9156270693545483778}
   m_Layer: 0
   m_Name: LittleRedTreat
   m_TagString: Untagged
@@ -131,3 +132,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.95, y: 6.81}
   m_EdgeRadius: 0
+--- !u!114 &-9156270693545483778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045291390922293888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b31430ee8630b74f8e694af66256d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  littleCandy_Points: 10
