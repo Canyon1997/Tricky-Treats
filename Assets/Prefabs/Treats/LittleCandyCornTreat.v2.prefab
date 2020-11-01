@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4687628299519963623}
   - component: {fileID: -7072454728067109385}
   - component: {fileID: 1716115199066253757}
+  - component: {fileID: 1598974504237258303}
   m_Layer: 0
   m_Name: LittleCandyCornTreat.v2
-  m_TagString: Untagged
+  m_TagString: LittleCandy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,3 +132,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.06, y: 6.81}
   m_EdgeRadius: 0
+--- !u!114 &1598974504237258303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2900862766683134783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef97f38fec3cf664fae42f145e1eea02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: -7072454728067109385}
+  item: 0
