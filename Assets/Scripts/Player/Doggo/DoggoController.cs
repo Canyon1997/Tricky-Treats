@@ -9,6 +9,13 @@ public class DoggoController : UniversalPlayerItems
     private Animator animator;
     private Vector2 movement;
 
+    private bool house1Completed;
+    private bool house2Completed;
+    private bool house3Completed;
+    private bool house4Completed;
+
+    public static int level = 1;
+
 
     [Header("Game Controller")]
     [SerializeField] private GameObject gameController;
@@ -74,19 +81,22 @@ public class DoggoController : UniversalPlayerItems
             audioClip.PlayOneShot(gnomed);
         }
 
-        if (other.gameObject.CompareTag("House 1") && controller.level == 1)
+        if (other.gameObject.CompareTag("House 1") && level == 1)
         {
             SceneManager.LoadScene(2);
+            level = 2;
         }
-        else if (other.gameObject.CompareTag("House 2") && controller.level == 2)
+        else if (other.gameObject.CompareTag("House 2") && level == 2)
         {
             SceneManager.LoadScene(2);
+            level = 3;
         }
-        else if (other.gameObject.CompareTag("House 3") && controller.level == 3)
+        else if (other.gameObject.CompareTag("House 3") && level == 3)
         {
             SceneManager.LoadScene(2);
+            level = 4;
         }
-        else if(other.gameObject.CompareTag("Hosue 4") && controller.level == 4)
+        else if(other.gameObject.CompareTag("House 4") && level == 4)
         {
             SceneManager.LoadScene(2);
         }

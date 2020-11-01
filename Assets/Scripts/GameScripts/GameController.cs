@@ -6,13 +6,17 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+
     [Header("Game State Variables")]
-    public int level = 1;
+    public int currentLevel;
+    static int level;
     public bool miniGameStarted;
+    public bool gameOver;
     
     [Header("Score Info")]
     public Text scoreText;
-    public int score = 0;
+    public int currentScore = 0;
+    public static int totalScore = 0;
 
     [Header("Timer")]
     public Text timerText;
@@ -21,6 +25,8 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        level = 1;
+        currentLevel = 1;
 
         //Text Setter
         ScoreUI();
@@ -45,15 +51,20 @@ public class GameController : MonoBehaviour
             if (timer <= 0)
             {
                 level++;
+                currentLevel = level;
+                gameOver = true;
+                totalScore += currentScore;
                 miniGameStarted = false;
                 SceneManager.LoadScene(1);
             }
+
+
         
     }
 
     void ScoreUI()
     {
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Score: " + currentScore;
     }
 
     void TimerUI()

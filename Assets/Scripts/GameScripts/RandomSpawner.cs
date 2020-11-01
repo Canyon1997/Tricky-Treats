@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class RandomSpawner : MonoBehaviour
 {
+    public static int level = 1;
+
     [Header("Game Controller")]
     [SerializeField] private GameObject gameController;
     [SerializeField] private GameController controller;
@@ -33,12 +35,29 @@ public class RandomSpawner : MonoBehaviour
         spawnCountDown = spawnTime;
 
         controller = gameController.GetComponent<GameController>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(controller.miniGameStarted)
+        if(controller.gameOver && level == 1)
+        {
+            level = 2;
+        }
+        else if (controller.gameOver && level == 2)
+        {
+            level = 3;
+        }
+        else if (controller.gameOver && level == 3)
+        {
+            level = 4;
+        }
+
+
+
+
+        if (controller.miniGameStarted)
         {
             RandomLocationSpawns();
 
@@ -46,19 +65,19 @@ public class RandomSpawner : MonoBehaviour
             //Adds another wave of random spawns based on the level youre on
 
             //Level 2
-            if(controller.level >= 2)
+            if(level >= 2)
             {
                 RandomLocationSpawns();
             }
 
             //Level 3
-            if(controller.level >= 3)
+            if(level >= 3)
             {
                 RandomLocationSpawns();
             }
 
             //Level 4
-            if(controller.level >= 4)
+            if(level >= 4)
             {
                 RandomLocationSpawns();
             }

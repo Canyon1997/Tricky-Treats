@@ -64,42 +64,42 @@ public class BasketController : UniversalPlayerItems
     {
         if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.LittleCandy)
         {
-            controller.score += 10;
+            controller.currentScore += 10;
             Destroy(other.gameObject);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.KingCandy)
         {
-            controller.score += 20;
+            controller.currentScore += 20;
             Destroy(other.gameObject);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.BakedCandy)
         {
-            controller.score += 40;
+            controller.currentScore += 40;
             Destroy(other.gameObject);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.ToothBrush)
         {
-            controller.score -= 10;
+            controller.currentScore -= 10;
             Destroy(other.gameObject);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.Rock)
         {
-            controller.score -= 20;
+            controller.currentScore -= 20;
             Destroy(other.gameObject);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.Pencil)
         {
-            controller.score -= 10;
+            controller.currentScore -= 10;
             Destroy(other.gameObject);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.VampireTeeth)
         {
-            controller.score -= 20;
+            controller.currentScore -= 20;
             Destroy(other.gameObject);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.SpiderRing)
         {
-            controller.score -= 10;
+            controller.currentScore -= 10;
             Destroy(other.gameObject);
         }
     }
