@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    public int level = 1;
+    public int level;
 
     public bool miniGameStarted;
     

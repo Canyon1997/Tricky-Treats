@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoggoController : UniversalPlayerItems
 {
     private Rigidbody2D doggo_RB;
-
+    private Animator animator;
     private Vector2 movement;
 
     [Header("Doggo Move Speed!")]
@@ -32,6 +32,7 @@ public class DoggoController : UniversalPlayerItems
     void Start()
     {
         doggo_RB = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
 
@@ -40,6 +41,11 @@ public class DoggoController : UniversalPlayerItems
         //Input for movement
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        //Animations for Movement
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
 
