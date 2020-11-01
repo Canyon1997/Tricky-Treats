@@ -21,6 +21,7 @@ public class GameController : MonoBehaviour
     public int timer = 30;
     private bool startTimer;
 
+
     void Start()
     {
         //Text Setter
@@ -34,7 +35,7 @@ public class GameController : MonoBehaviour
 
             //Text UI
             ScoreUI();
-            TimerUI();
+            TimerUI();   
 
             //Starts timer countdown
             if (startTimer == false && timer > 0)
@@ -50,9 +51,6 @@ public class GameController : MonoBehaviour
                 miniGameStarted = false;
                 SceneManager.LoadScene(1);
             }
-
-
-        
     }
 
     void ScoreUI()
