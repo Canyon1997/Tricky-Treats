@@ -99,6 +99,11 @@ public class DoggoController : UniversalPlayerItems
         else if(other.gameObject.CompareTag("House 4") && level == 4)
         {
             SceneManager.LoadScene(2);
+            level = 5;
+        }
+        else if(other.gameObject.CompareTag("Win Screen") && level == 5)
+        {
+            SceneManager.LoadScene(3);
         }
     }
 }

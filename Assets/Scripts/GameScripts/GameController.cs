@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour
 
     [Header("Game State Variables")]
     public int currentLevel;
-    static int level;
+    static int level = 1;
     public bool miniGameStarted;
     public bool gameOver;
     
@@ -25,7 +25,6 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        level = 1;
         currentLevel = 1;
 
         //Text Setter
@@ -47,19 +46,16 @@ public class GameController : MonoBehaviour
                 StartCoroutine(TimerStarts());
             }
 
-            //Exits minigame when time runs out
-            if (timer <= 0)
-            {
-                level++;
-                currentLevel = level;
-                gameOver = true;
-                totalScore += currentScore;
-                miniGameStarted = false;
-                SceneManager.LoadScene(1);
-            }
-
-
-        
+        //Exits minigame when time runs out
+        if (timer <= 0)
+        {
+            level++;
+            currentLevel = level;
+            gameOver = true;
+            totalScore += currentScore;
+            miniGameStarted = false;
+            SceneManager.LoadScene(1);
+        }
     }
 
     void ScoreUI()
