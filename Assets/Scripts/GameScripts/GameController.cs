@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     [Header("Game State Variables")]
-    public int level;
+    public int level = 1;
     public bool miniGameStarted;
     
     [Header("Score Info")]
@@ -21,19 +21,16 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        //Level Setter
-        level = 1;
 
         //Text Setter
-        //ScoreUI();
-        //TimerUI();
+        ScoreUI();
+        TimerUI();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(miniGameStarted)
-        {
+
             //Text UI
             ScoreUI();
             TimerUI();
@@ -47,11 +44,11 @@ public class GameController : MonoBehaviour
             //Exits minigame when time runs out
             if (timer <= 0)
             {
+                level++;
                 miniGameStarted = false;
                 SceneManager.LoadScene(1);
-                level++;
             }
-        }
+        
     }
 
     void ScoreUI()

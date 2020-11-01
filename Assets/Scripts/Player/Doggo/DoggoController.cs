@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoggoController : UniversalPlayerItems
 {
@@ -8,6 +9,12 @@ public class DoggoController : UniversalPlayerItems
     private Animator animator;
     private Vector2 movement;
 
+
+    [Header("Game Controller")]
+    [SerializeField] private GameObject gameController;
+    [SerializeField] private GameController controller;
+
+    [Header("Audio")]
     [SerializeField] private AudioSource audioClip;
     [SerializeField] private AudioClip gnomed;
 
@@ -36,6 +43,7 @@ public class DoggoController : UniversalPlayerItems
     {
         doggo_RB = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        controller = gameController.GetComponent<GameController>();
     }
 
 
@@ -64,6 +72,23 @@ public class DoggoController : UniversalPlayerItems
         {
             other.gameObject.GetComponent<SpriteRenderer>().enabled = true;
             audioClip.PlayOneShot(gnomed);
+        }
+
+        if (other.gameObject.CompareTag("House 1") && controller.level == 1)
+        {
+            SceneManager.LoadScene(2);
+        }
+        else if (other.gameObject.CompareTag("House 2") && controller.level == 2)
+        {
+            SceneManager.LoadScene(2);
+        }
+        else if (other.gameObject.CompareTag("House 3") && controller.level == 3)
+        {
+            SceneManager.LoadScene(2);
+        }
+        else if(other.gameObject.CompareTag("Hosue 4") && controller.level == 4)
+        {
+            SceneManager.LoadScene(2);
         }
     }
 }
