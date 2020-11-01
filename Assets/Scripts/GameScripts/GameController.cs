@@ -5,16 +5,25 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    private int level;
+
+    public bool miniGameStarted;
+    
     [Header("Score Info")]
     public Text scoreText;
-    public int score;
+    public int score = 0;
 
     [Header("Timer")]
     public Text timerText;
-    public float timer;
+    public int timer = 30;
+    private bool startTimer;
 
     void Start()
     {
+        //Level Setter
+        level = 1;
+
+        //Text Setter
         ScoreUI();
         TimerUI();
     }
@@ -25,6 +34,12 @@ public class GameController : MonoBehaviour
         //Text UI
         ScoreUI();
         TimerUI();
+
+        //Starts timer countdown
+        if(startTimer == false && timer > 0)
+        {
+            StartCoroutine(TimerStarts());
+        }
     }
 
     void ScoreUI()
@@ -34,6 +49,20 @@ public class GameController : MonoBehaviour
 
     void TimerUI()
     {
-        timerText.text = "Time: " + timer;
+        timerText.text = "00:" + timer;
+
+        if(timer <10)
+        {
+            timerText.text = "00:0" + timer;
+        }
+    }
+
+    IEnumerator TimerStarts()
+    {
+        startTimer = true;
+        yield return new WaitForSeconds(1);
+        timer -= 1;
+        timerText.text = "00:" + timer;
+        startTimer = false;
     }
 }

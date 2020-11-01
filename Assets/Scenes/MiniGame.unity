@@ -404,7 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2126da3787fea884488bf13410bdc67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basket_MoveSpeed: 2
+  basket_MoveSpeed: 8
 --- !u!1 &685139461
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,10 +564,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b43826d59fc314e868421e66054017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  miniGameStarted: 0
   scoreText: {fileID: 1632658546}
   score: 0
   timerText: {fileID: 925886509}
-  timer: 0
+  timer: 30
 --- !u!4 &882623436
 Transform:
   m_ObjectHideFlags: 0
@@ -772,6 +773,7 @@ MonoBehaviour:
   - {fileID: 1000237823031067171, guid: ce1733f92f171304b8b5e189136072c1, type: 3}
   - {fileID: 5979414622430926185, guid: baa41c2a409ea104bb13553d655d0e6a, type: 3}
   - {fileID: 4044605971800218254, guid: 6802e09a50b2813499cfc47da8628178, type: 3}
+  spawnMultiplier: 15
 --- !u!4 &1375189551
 Transform:
   m_ObjectHideFlags: 0

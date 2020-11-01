@@ -28,9 +28,6 @@ public class BasketController : UniversalPlayerItems
     }
 
 
-
-
-
     void Start()
     {
         basket_RB = GetComponent<Rigidbody2D>();

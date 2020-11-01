@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class RandomSpawner : MonoBehaviour
 {
+
+
     [Header("Seconds Till Object Spawns")]
     public float spawnTime;//starting time till object is spawned
     private float spawnCountDown;
+    private float secondSpawnCountDown;
 
     private int randomSpawnLocations;
     private int randomItemSpawn;
@@ -21,7 +24,7 @@ public class RandomSpawner : MonoBehaviour
     [SerializeField] private GameObject[] trickOrCandy;
 
 
-
+    public int spawnMultiplier;//Increases number of spawns every multiple of 5
     // Start is called before the first frame update
     void Start()
     {
@@ -32,10 +35,9 @@ public class RandomSpawner : MonoBehaviour
     void Update()
     {
         RandomLocationSpawns();
-        
 
         //Error Checks
-        if(trickOrCandy == null)
+        if (trickOrCandy == null)
         {
             Debug.LogError("Item Prefabs need to be added to the Array");
         }
@@ -48,15 +50,14 @@ public class RandomSpawner : MonoBehaviour
         spawnCountDown -= Time.deltaTime;//Spawn timer before an object is spawned
 
         randomSpawnLocations = Random.Range(0, spawnLocations.Length);//gets a random spawn point to spawn candy
+
         randomItemSpawn = Random.Range(0, trickOrCandy.Length);//gets a random item from array of objects to spawn
 
-        //5 second timer before random location is chosen
+        //timer before random location is chosen
         if (spawnCountDown <= 0)
         {
-            Debug.Log(spawnLocations[randomSpawnLocations].position);
-            Debug.Log(trickOrCandy[randomItemSpawn]);
             Instantiate(trickOrCandy[randomItemSpawn], spawnLocations[randomSpawnLocations].position, Quaternion.identity);
-      
+
             spawnCountDown = spawnTime;
         }
     }
