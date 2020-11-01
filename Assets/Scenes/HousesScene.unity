@@ -682,6 +682,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 >>>>>>> parent of 3c7fbe5... Scene UI Updates
@@ -839,6 +840,8 @@ Canvas:
 >>>>>>> parent of 7221bc3... UI/Dialogue
 =======
 >>>>>>> parent of 3c7fbe5... Scene UI Updates
+=======
+>>>>>>> parent of 7221bc3... UI/Dialogue
 =======
 >>>>>>> parent of 7221bc3... UI/Dialogue
 =======
@@ -1184,6 +1187,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1649315056
 =======
 --- !u!1 &1459449041
@@ -1303,6 +1307,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 7221bc3... UI/Dialogue
 =======
 >>>>>>> parent of 7221bc3... UI/Dialogue
 =======
@@ -1870,6 +1876,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 >>>>>>> parent of 3c7fbe5... Scene UI Updates
@@ -2029,6 +2036,8 @@ CanvasRenderer:
 >>>>>>> parent of 7221bc3... UI/Dialogue
 =======
 >>>>>>> parent of 7221bc3... UI/Dialogue
+=======
+>>>>>>> parent of 7221bc3... UI/Dialogue
 --- !u!1 &1802965087
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,6 +2154,7 @@ Transform:
   m_Father: {fileID: 1565521695}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2373,6 +2383,8 @@ Transform:
 >>>>>>> parent of 7221bc3... UI/Dialogue
 =======
 >>>>>>> parent of 3c7fbe5... Scene UI Updates
+=======
+>>>>>>> parent of 7221bc3... UI/Dialogue
 =======
 >>>>>>> parent of 7221bc3... UI/Dialogue
 =======
