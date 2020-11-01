@@ -7,6 +7,6 @@ public class MainMenuScript : MonoBehaviour
 {
     public void startFunction()
     {
-        SceneManager.LoadScene("HousesScene");
+        SceneManager.LoadScene("HouseScene");
     }
 }
