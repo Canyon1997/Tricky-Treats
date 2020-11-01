@@ -1122,16 +1122,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4601357159463464064, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
       propertyPath: m_Name
-      value: PumpkinBasket
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4601357159463464064, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 882623434}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[0]
+      value: 
+      objectReference: {fileID: 314675900317923755, guid: f170aa3559b91594399bbede4afd8bff, type: 3}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[1]
+      value: 
+      objectReference: {fileID: 6994595125822633200, guid: 0f2061a5808757047be43ec80d7594de, type: 3}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[2]
+      value: 
+      objectReference: {fileID: 2900862766683134783, guid: 5b1a6683788251e40869c116259ac3bc, type: 3}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[3]
+      value: 
+      objectReference: {fileID: 205430708779704384, guid: 598f74d6e928e254783d542697e6bfca, type: 3}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[4]
+      value: 
+      objectReference: {fileID: 5183543046513513694, guid: d956d4f350b61d44eb7cd1feadf472ba, type: 3}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[5]
+      value: 
+      objectReference: {fileID: 8529533050825505584, guid: 256742c5365ce18428fe5d00c6402330, type: 3}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[6]
+      value: 
+      objectReference: {fileID: 2045291390922293888, guid: 2736b546e4e6a0a4485aaaaecb29e749, type: 3}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[7]
+      value: 
+      objectReference: {fileID: 4452099290131424819, guid: 0b21f23f29c6f7b4fbd29cf855a5caae, type: 3}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[8]
+      value: 
+      objectReference: {fileID: 2862387360948132783, guid: ce912878f5fc9734b93369083b0fb354, type: 3}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[9]
+      value: 
+      objectReference: {fileID: 8358655097637232374, guid: 6b329b0869c35c74a8e849c1b14fa2c8, type: 3}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[10]
+      value: 
+      objectReference: {fileID: 1000237823031067171, guid: ce1733f92f171304b8b5e189136072c1, type: 3}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[11]
+      value: 
+      objectReference: {fileID: 5979414622430926185, guid: baa41c2a409ea104bb13553d655d0e6a, type: 3}
+    - target: {fileID: 7450980663570711038, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
+      propertyPath: itemCollectables.Array.data[12]
+      value: 
+      objectReference: {fileID: 4044605971800218254, guid: 6802e09a50b2813499cfc47da8628178, type: 3}
     - target: {fileID: 8134170561491307844, guid: 960176e8f0045ca49a6028da917dbac0, type: 3}
       propertyPath: m_Offset.y
       value: -0.06882727

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8361790170223064814}
   - component: {fileID: -6938487998038509569}
   - component: {fileID: 6474097844241610023}
+  - component: {fileID: 5325127520462511137}
   m_Layer: 0
   m_Name: ToothbrushTrick
   m_TagString: ToothBrush
@@ -131,3 +132,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.29, y: 6.81}
   m_EdgeRadius: 0
+--- !u!114 &5325127520462511137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979414622430926185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef97f38fec3cf664fae42f145e1eea02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  item: 3
