@@ -64,6 +64,9 @@ public class DoggoController : UniversalPlayerItems
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        //Quit Game Options
+        QuitGame();
     }
 
 
@@ -104,6 +107,14 @@ public class DoggoController : UniversalPlayerItems
         else if (other.gameObject.CompareTag("Win") && level == 5)
         {
             SceneManager.LoadScene(3);
+        }
+    }
+
+    void QuitGame()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
 }
