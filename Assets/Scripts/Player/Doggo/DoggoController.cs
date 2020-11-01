@@ -8,6 +8,9 @@ public class DoggoController : UniversalPlayerItems
     private Animator animator;
     private Vector2 movement;
 
+    [SerializeField] private AudioSource audioClip;
+    [SerializeField] private AudioClip gnomed;
+
     [Header("Doggo Move Speed!")]
     public float doggo_MoveSpeed;
 
@@ -53,5 +56,14 @@ public class DoggoController : UniversalPlayerItems
     {
         //Rigidbody movement
         Rigidbody.MovePosition((Vector2) transform.position + movement * doggo_MoveSpeed * Time.fixedDeltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("gnomed"))
+        {
+            other.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            audioClip.PlayOneShot(gnomed);
+        }
     }
 }

@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    [Header("Game State Variables")]
     public int level;
-
     public bool miniGameStarted;
     
     [Header("Score Info")]
@@ -25,29 +25,32 @@ public class GameController : MonoBehaviour
         level = 1;
 
         //Text Setter
-        ScoreUI();
-        TimerUI();
+        //ScoreUI();
+        //TimerUI();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Text UI
-        ScoreUI();
-        TimerUI();
-
-        //Starts timer countdown
-        if(startTimer == false && timer > 0)
+        if(miniGameStarted)
         {
-            StartCoroutine(TimerStarts());
-        }
+            //Text UI
+            ScoreUI();
+            TimerUI();
 
-        //Exits minigame when time runs out
-        if(timer <= 0)
-        {
-            miniGameStarted = false;
-            SceneManager.LoadScene(1);
-            level++;
+            //Starts timer countdown
+            if (startTimer == false && timer > 0)
+            {
+                StartCoroutine(TimerStarts());
+            }
+
+            //Exits minigame when time runs out
+            if (timer <= 0)
+            {
+                miniGameStarted = false;
+                SceneManager.LoadScene(1);
+                level++;
+            }
         }
     }
 
