@@ -527,7 +527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b43826d59fc314e868421e66054017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miniGameStarted: 0
+  level: 1
+  miniGameStarted: 1
   scoreText: {fileID: 1632658546}
   score: 0
   timerText: {fileID: 925886509}
@@ -804,6 +805,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a2c3c3bd2762d4e95a892490fa240d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameController: {fileID: 882623434}
+  controller: {fileID: 0}
   spawnTime: 1
   spawnLocations:
   - {fileID: 972309791}

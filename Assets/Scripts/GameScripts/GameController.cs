@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    private int level;
+    public int level = 1;
 
     public bool miniGameStarted;
     
@@ -39,6 +40,14 @@ public class GameController : MonoBehaviour
         if(startTimer == false && timer > 0)
         {
             StartCoroutine(TimerStarts());
+        }
+
+        //Exits minigame when time runs out
+        if(timer <= 0)
+        {
+            miniGameStarted = false;
+            SceneManager.LoadScene(1);
+            level++;
         }
     }
 

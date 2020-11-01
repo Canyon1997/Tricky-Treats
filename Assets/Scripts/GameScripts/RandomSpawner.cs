@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class RandomSpawner : MonoBehaviour
 {
-
+    [Header("Game Controller")]
+    [SerializeField] private GameObject gameController;
+    [SerializeField] private GameController controller;
 
     [Header("Seconds Till Object Spawns")]
     public float spawnTime;//starting time till object is spawned
@@ -29,12 +31,40 @@ public class RandomSpawner : MonoBehaviour
     void Start()
     {
         spawnCountDown = spawnTime;
+
+        controller = gameController.GetComponent<GameController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        RandomLocationSpawns();
+        if(controller.miniGameStarted)
+        {
+            RandomLocationSpawns();
+
+
+            //Adds another wave of random spawns based on the level youre on
+
+            //Level 2
+            if(controller.level >= 2)
+            {
+                RandomLocationSpawns();
+            }
+
+            //Level 3
+            if(controller.level >= 3)
+            {
+                RandomLocationSpawns();
+            }
+
+            //Level 4
+            if(controller.level >= 4)
+            {
+                RandomLocationSpawns();
+            }
+
+        }
+        
 
         //Error Checks
         if (trickOrCandy == null)
