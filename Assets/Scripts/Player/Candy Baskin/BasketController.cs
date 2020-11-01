@@ -18,6 +18,11 @@ public class BasketController : UniversalPlayerItems
     [Header("Basket Speed")]
     public float basket_MoveSpeed;
 
+    [Header("Audio Clips")]
+    public AudioSource audioTrickOrTreat;
+    public AudioClip treatAudio;
+    public AudioClip trickAudio;
+
     //Setting Inherited Fields
     public override Rigidbody2D Rigidbody
     {
@@ -66,41 +71,49 @@ public class BasketController : UniversalPlayerItems
         {
             controller.currentScore += 10;
             Destroy(other.gameObject);
+            audioTrickOrTreat.PlayOneShot(treatAudio);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.KingCandy)
         {
             controller.currentScore += 20;
             Destroy(other.gameObject);
+            audioTrickOrTreat.PlayOneShot(treatAudio);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.BakedCandy)
         {
             controller.currentScore += 40;
             Destroy(other.gameObject);
+            audioTrickOrTreat.PlayOneShot(treatAudio);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.ToothBrush)
         {
             controller.currentScore -= 10;
             Destroy(other.gameObject);
+            audioTrickOrTreat.PlayOneShot(trickAudio);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.Rock)
         {
             controller.currentScore -= 20;
             Destroy(other.gameObject);
+            audioTrickOrTreat.PlayOneShot(trickAudio);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.Pencil)
         {
             controller.currentScore -= 10;
             Destroy(other.gameObject);
+            audioTrickOrTreat.PlayOneShot(trickAudio);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.VampireTeeth)
         {
             controller.currentScore -= 20;
             Destroy(other.gameObject);
+            audioTrickOrTreat.PlayOneShot(trickAudio);
         }
         else if(other.gameObject.GetComponent<ItemScript>().item == ItemScript.ItemID.SpiderRing)
         {
             controller.currentScore -= 10;
             Destroy(other.gameObject);
+            audioTrickOrTreat.PlayOneShot(trickAudio);
         }
     }
 }
