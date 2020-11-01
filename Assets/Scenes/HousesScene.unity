@@ -680,6 +680,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 >>>>>>> parent of 3c7fbe5... Scene UI Updates
@@ -837,6 +838,8 @@ Canvas:
 >>>>>>> parent of 7221bc3... UI/Dialogue
 =======
 >>>>>>> parent of 3c7fbe5... Scene UI Updates
+=======
+>>>>>>> parent of 7221bc3... UI/Dialogue
 --- !u!1 &1014380860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1179,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1649315056
 =======
 --- !u!1 &1459449041
@@ -1295,6 +1299,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 7221bc3... UI/Dialogue
 --- !u!1 &1500994074
 >>>>>>> parent of 3c7fbe5... Scene UI Updates
 GameObject:
@@ -1856,6 +1862,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 >>>>>>> parent of 3c7fbe5... Scene UI Updates
@@ -2011,6 +2018,8 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 =======
 >>>>>>> parent of 7221bc3... UI/Dialogue
+=======
+>>>>>>> parent of 7221bc3... UI/Dialogue
 --- !u!1 &1802965087
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,6 +2136,7 @@ Transform:
   m_Father: {fileID: 1565521695}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -2353,6 +2363,8 @@ Transform:
 >>>>>>> parent of 7221bc3... UI/Dialogue
 =======
 >>>>>>> parent of 3c7fbe5... Scene UI Updates
+=======
+>>>>>>> parent of 7221bc3... UI/Dialogue
 --- !u!1 &2069384373 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 902345253014943458, guid: 6eb2fb5b34c1d8049b249344a16a2ee8, type: 3}
