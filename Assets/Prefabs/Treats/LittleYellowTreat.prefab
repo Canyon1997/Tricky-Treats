@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8710167862576309844}
   - component: {fileID: 41063536012381353}
   - component: {fileID: -8182407736645294419}
-  - component: {fileID: 7768229260701213844}
   m_Layer: 0
   m_Name: LittleYellowTreat
   m_TagString: Untagged
@@ -132,16 +131,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.31, y: 3.92}
   m_EdgeRadius: 0
---- !u!114 &7768229260701213844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4452099290131424819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b31430ee8630b74f8e694af66256d83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  littleCandy_Points: 10

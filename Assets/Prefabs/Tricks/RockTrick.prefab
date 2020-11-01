@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6428611160445828468}
   - component: {fileID: 6974970087134460506}
   - component: {fileID: -8876917587515079823}
-  - component: {fileID: 3584113283558126631}
   m_Layer: 0
   m_Name: RockTrick
   m_TagString: Untagged
@@ -132,15 +131,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.8, y: 6.81}
   m_EdgeRadius: 0
---- !u!114 &3584113283558126631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8358655097637232374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6efbc5826610167419586296a898f7fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

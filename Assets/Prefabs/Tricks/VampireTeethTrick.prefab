@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5729545647319882556}
   - component: {fileID: -2224389423014118137}
   - component: {fileID: 11215251393745337}
-  - component: {fileID: -6932151132561966287}
   m_Layer: 0
   m_Name: VampireTeethTrick
   m_TagString: Untagged
@@ -132,15 +131,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.31, y: 3.02}
   m_EdgeRadius: 0
---- !u!114 &-6932151132561966287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4044605971800218254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7eff56db5907a541a17238d542df48e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

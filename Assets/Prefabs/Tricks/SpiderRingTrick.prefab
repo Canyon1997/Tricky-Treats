@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6724586188509837905}
   - component: {fileID: -2975839584625133472}
   - component: {fileID: -7905384805351930684}
-  - component: {fileID: -4822754259885261026}
   m_Layer: 0
   m_Name: SpiderRingTrick
   m_TagString: Untagged
@@ -132,15 +131,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.65, y: 6.81}
   m_EdgeRadius: 0
---- !u!114 &-4822754259885261026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000237823031067171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2aea212ffc6bc7145b94d984e92da396, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
