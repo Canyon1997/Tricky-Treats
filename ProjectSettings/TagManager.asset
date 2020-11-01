@@ -17,6 +17,7 @@ TagManager:
   - House 3
   - House 4
   - gnomed
+  - Win
   layers:
   - Default
   - TransparentFX

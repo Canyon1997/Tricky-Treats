@@ -8,8 +8,6 @@ public class GameController : MonoBehaviour
 {
 
     [Header("Game State Variables")]
-    public int currentLevel;
-    static int level;
     public bool miniGameStarted;
     public bool gameOver;
     
@@ -25,9 +23,6 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        level = 1;
-        currentLevel = 1;
-
         //Text Setter
         ScoreUI();
         TimerUI();
@@ -50,8 +45,6 @@ public class GameController : MonoBehaviour
             //Exits minigame when time runs out
             if (timer <= 0)
             {
-                level++;
-                currentLevel = level;
                 gameOver = true;
                 totalScore += currentScore;
                 miniGameStarted = false;
